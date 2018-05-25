@@ -11,5 +11,38 @@
   </body>
 
     <script>
+      function Person(first, last, age, gender, interests) {
+        this.name = {
+          first,
+          last
+        };
+        this['age'] = age;
+        this.gender = gender;
+        this.interests = interests;
+        var sex;
+        var addi=this.interests[0];
+        if(this.gender==='male'){
+          sex='He';
+        } else {
+          sex='She';
+        }
+        for(var i = 1; i < this.interests.length; i++) {
+            
+            if(i===this.interests.length-1){
+              addi+=' and ';
+            } else {
+              addi+=' , ';
+            }
+            addi += this.interests[i];
+        }
+        this.bio = function() {
+          alert(this.name.first + ' ' + this.name.last + ' is ' + this.age + ' years old. '+ sex+ ' likes '  + addi +'.');
+        };
+        this.greeting = function() {
+          alert('Hi! I\'m ' + this.name.first + '.');
+        };
+      };
+      var personA=new Person('Bruce','zhv',22,'male',['reading','vising','watching','playing']);
+      var person2 = Object.create(personA);
     </script>
 </html>
