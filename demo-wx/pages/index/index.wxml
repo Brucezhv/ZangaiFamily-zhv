@@ -1,0 +1,17 @@
+<!--index.wxml-->
+<view class="index-page">
+  <image class="back-image" mode="Widthfix" src="/image/bg.jpg" ></image>
+  <view class="frist-title"> 
+    好友匹配雷达图
+  </view>
+  <view class="last-title">
+    点击进入
+  </view>
+</view>
+<view class="c">测评·占卜</view>
+    <view class="c-border">
+      <image class="ll-image" src="/image/1.png"></image>
+      <view class="ww-border">心理测试</view>
+      <view class="qq-border">去测></view>
+      <view class="oo-border">39.5万人在测</view>
+    </view>

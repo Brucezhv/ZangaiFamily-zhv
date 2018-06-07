@@ -1,0 +1,65 @@
+/**index.wxss**/
+.index-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.back-image {
+  width: 812rpx;
+}
+.frist-title {
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin-left: 150rpx;
+  margin-top: 50rpx; 
+  color: blue;
+  font-size: 30px;
+}
+.last-title {
+    display: flex;
+    position: absolute;
+    margin: 0 auto;
+    margin-top: 300rpx; 
+    color: blue;
+    font-size: 15px;
+    border:1px solid #e0e2e9;
+    border-radius: 23rpx;
+    background-color: #FF6666;
+    padding: 8rpx 30rpx;
+    margin-bottom: 2rpx;
+}
+.c-border {
+  border-top: 2px solid #808080;
+}
+.ll-image {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.ww-border {
+  position: absolute;
+  display: inline-block;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+.qq-border {
+  display: inline-block;
+  position: absolute;
+  border: 1px solid #FF6666;
+  border-radius: 25px;
+  margin-top: 30px;
+  margin-left: 200px;
+}
+.oo-border {
+    display: inline-block;
+  position: absolute;
+  border-radius: 25px;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 15px;
+}
