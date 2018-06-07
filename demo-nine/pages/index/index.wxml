@@ -1,0 +1,34 @@
+<!--index.wxml-->
+<view class="head-page">
+  好用就推荐
+  <image class="f-images" src="/images/奖励.png"></image>
+</view>
+<movable-area class="center-page"> 
+  <image class="center-images" src="/images/pic3.jpg"></image>
+  <view class="margin-bottom-page1">
+  </view>
+    <view class="margin-bottom-page2">
+  </view>
+    <view class="margin-bottom-page3">
+  </view>
+   <view class="margin-bottom-page1-2">
+  </view>
+    <view class="margin-bottom-page2-2">
+  </view>
+    <view class="margin-bottom-page3-2">
+  </view> 
+     <view class="margin-bottom-page1-3">
+  </view>
+    <view class="margin-bottom-page2-3">
+  </view>
+    <view class="margin-bottom-page3-3">
+    </view>
+</movable-area>
+<view class="l-page">
+  <view class="left-title">
+    选择图片
+  </view>
+  <view class="right-title">
+    保存相册
+  </view>
+</view>

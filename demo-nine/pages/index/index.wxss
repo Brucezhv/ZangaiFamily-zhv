@@ -1,0 +1,131 @@
+/**index.wxss**/
+.head-page{
+  display: flex;
+  height: 50px;
+  align-items:  center;
+}
+
+.f-images {
+  width: 25px;
+  height: 25px;
+}
+
+.center-page {
+  display: inline-flex;
+  width: 100%;
+  height: 400px;
+  flex-direction: column;
+  align-content: space-between;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+.center-images {
+   width: 812rpx;
+   height: 96%;
+}
+
+.margin-bottom-page1 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+}
+.margin-bottom-page2 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 34%;
+}
+
+.margin-bottom-page3 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 68%;
+}
+
+.margin-bottom-page1-2 {
+
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-top: 35%;
+}
+.margin-bottom-page2-2 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 34%;
+  margin-top: 35%;
+}
+
+.margin-bottom-page3-2 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 68%;
+  margin-top: 35%;
+}
+.margin-bottom-page1-3 {
+
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-top: 70%;
+}
+.margin-bottom-page2-3 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 34%;
+  margin-top: 70%;
+}
+
+.margin-bottom-page3-3 {
+  display: flex;
+  position: absolute;
+  width: 32%;
+  height: 30%; 
+  border: 1px solid #fff;
+  margin-left: 68%;
+  margin-top: 70%;
+}
+
+.l-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150rpx;
+}
+
+.left-title{
+  display: inline-flex;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-size: 15px;
+  margin-right: 20px;
+}
+.right-title {
+  display: inline-flex;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  padding: 4px 10px;
+  font-style: #303030;
+  font-size: 15px;
+}

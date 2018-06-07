@@ -1,0 +1,44 @@
+<!--index.wxml-->
+<view class="head-page">
+  <view class="h1-page">
+    便利蜂
+  </view>
+  <image class="image-id" src="/images/touxiang.png">
+  </image>
+  <view class="image-page">我的</view>
+</view>
+<view class="erweima-page">
+  <view class="erweima-head">
+    我的会员卡
+  </view>
+  <image class="image-erweima" src="/images/erweima.png"></image>
+  <view class="number-head">3105 3605 0398 83</view>
+  <view class="new-head">每分钟自动更新（v3.23.0)</view>
+</view>
+<view class="center-page">
+  <image class="image-center" src="/images/fujinmendian.png"></image>
+  <view class="number-headl">附近门店</view>
+</view>
+<view class="center-page">
+  <image class="image-center" src="/images/gongxiangyusan.png"></image>
+  <view class="number-headl">共享雨伞</view>
+</view>
+<view class="center-page">
+  <image class="image-center" src="/images/chongdianbao.png"></image>
+  <view class="number-headl">充电宝</view>
+</view>
+<view class="center-page">
+  <image class="image-center" src="/images/bianlidanche.png"></image>
+  <view class="number-headl">便利单车</view>
+</view>
+<view class="footer-page">
+  <view class="footer-index">超级会员</view>
+  <view class="number-headd">尊享5项特权</view>
+ <image class="footer-image" src="/images/chaojihuiyuan.png"></image>
+</view>
+<view class="footer-page2">
+  <view class="footer-index">天天乐</view>
+  <view class="number-headd">6666</view>
+ <image class="footer-image" src="/images/tiantianle.png"></image>
+</view>
+<view class="l-page">自助购物</view>
