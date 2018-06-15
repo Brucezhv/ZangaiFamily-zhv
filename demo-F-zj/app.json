@@ -2,12 +2,12 @@
   "pages":[
     "pages/index/index",
     "pages/logs/logs",
-    "pages/aa/aa"
+    "pages/tupian/tupian"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "最美父亲",
     "navigationBarTextStyle":"black"
   }
 }
