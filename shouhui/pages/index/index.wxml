@@ -1,0 +1,28 @@
+<!--index.wxml-->
+<view class="container confirm">
+  <view class="confirm-page">
+    <view class="head-page main-page">
+      <image class="head-img" src="/images/head.png"></image>
+      <view class="font-head-page">
+        <view class="font-head-tit-page">亲子-治愈系</view>
+        <view class="font-head-text-page">300dpi电子稿</view>
+      </view>
+    </view>
+    <view class="upload-page main-page">
+      <view class="upload-head-page">
+        设计类型
+        <view class="upload-head-choice-page">
+          <view class="{{choiceHead}}" bindtap="choiceImgHd">头像</view>
+          <view class="{{choiceHalf}}" bindtap="choiceImgHf">半身</view>
+          <view class="{{choiceFull}}" bindtap="choiceImgFl">全身</view>
+        </view>
+     </view>
+     <view class="upload-center-page">
+      人数
+      <view class="">
+        
+      </view>
+     </view>
+    </view>
+  </view>
+</view>

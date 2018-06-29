@@ -1,34 +1,36 @@
 <!--index.wxml-->
-<view class="head-page">
-  好用就推荐
-  <image class="f-images" src="/images/奖励.png"></image>
-</view>
-<movable-area class="center-page"> 
-  <image class="center-images" src="/images/pic3.jpg"></image>
-  <view class="margin-bottom-page1">
+
+  <view class="head-page">
+    好用就推荐
+  <image class="f-images" mode="widthFix"  src="/images/ll.png"></image>
   </view>
-    <view class="margin-bottom-page2">
-  </view>
-    <view class="margin-bottom-page3">
-  </view>
-   <view class="margin-bottom-page1-2">
-  </view>
-    <view class="margin-bottom-page2-2">
-  </view>
-    <view class="margin-bottom-page3-2">
-  </view> 
-     <view class="margin-bottom-page1-3">
-  </view>
-    <view class="margin-bottom-page2-3">
-  </view>
-    <view class="margin-bottom-page3-3">
+  <view  class="center-page" > 
+    <image class="center-images" src="{{pageimg}}"></image>
+    <view class="margin-bottom-page1">
     </view>
-</movable-area>
-<view class="l-page">
-  <view class="left-title">
-    选择图片
+      <view class="margin-bottom-page2">
+    </view>
+      <view class="margin-bottom-page3">
+    </view>
+    <view class="margin-bottom-page1-2">
+    </view>
+      <view class="margin-bottom-page2-2">
+    </view>
+      <view class="margin-bottom-page3-2">
+    </view> 
+      <view class="margin-bottom-page1-3">
+    </view>
+      <view class="margin-bottom-page2-3">
+    </view>
+      <view class="margin-bottom-page3-3">
+      </view>
   </view>
-  <view class="right-title">
-    保存相册
+
+  <view class="l-page">
+    <button bindtap="choosePic" hover-class="left-button-hover" class="button-title button-l-color" > 
+      上传
+    </button>
+    <button bindtap="default" hover-class="right-button-hover" class="button-title button-f-color"> 
+      保存
+    </button>
   </view>
-</view>

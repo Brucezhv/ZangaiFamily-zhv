@@ -1,0 +1,85 @@
+/**index.wxss**/
+.head-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120rpx;
+}
+.head-tit-page{
+  display: inline-flex;
+  font-size: 40rpx;
+}
+.head-img-page {
+  display: inline-flex;
+  width: 40rpx;
+}
+.center-page {
+  display: inline-flex;
+  position: relative;
+  height: 750rpx; 
+  flex-direction: column;
+  width: 750rpx;
+  overflow: hidden;
+}
+
+.line-top {
+  display: flex;
+  position: absolute;
+  margin-top: 31%;
+  height: 15rpx;
+  width: 100%;
+  background-color: #ff8080;
+}
+.line-left {
+  display: flex;
+  position: absolute;
+  left: 31%;
+  height: 100%;
+  width: 15rpx;
+  background-color: #ff8080;
+}
+.line-bottom {
+  display: flex;
+  position: absolute;
+  bottom: 31%;
+  height: 15rpx;
+  width: 100%;
+  background-color: #ff8080;
+}
+.line-right {
+  display: flex;
+  position: absolute;
+  right: 31%;
+  height: 100%;
+  width: 15rpx;
+  background-color: #ff8080;
+}
+.footer-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 350rpx;
+}
+.footer-button {
+  display: inline-flex;
+  padding: 1px 40px;
+  font-size: 30rpx;
+  border: 1px solid #000; 
+  border-radius: 20rpx; 
+}
+.footer-left-button {
+  background-color: #ff6060;
+}
+.footer-right-button {
+  background-color: #008080;
+}
+.cut-page {
+  overflow: hidden;
+  opacity: 0;
+}
+.canvas-cut {
+  width: 750px;
+  height: 750px;
+}
