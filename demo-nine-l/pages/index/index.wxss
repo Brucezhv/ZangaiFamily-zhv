@@ -78,6 +78,8 @@
 .cut-page {
   overflow: hidden;
   opacity: 0;
+  width:0px;
+  height:0px;
 }
 .canvas-cut {
   width: 750px;

@@ -7,7 +7,7 @@
     <image class="head-img-page" src="/images/ll.png" mode="widthFix"></image>
   </view>
   <view class="center-page">
-    <image animation="{{animationData}}" src="{{pageimg}}" bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback" mode='aspectFill' bindload = "imgload" style="position: absolute; width:{{ touch.scaleWidth}}rpx; height:{{touch.scaleHeight}}rpx; left:{{touch.left}}rpx; top:{{touch.top}}rpx " ></image>
+    <image animation="{{animationData}}" src="{{pageimg}}" bindtouchmove="touchmoveCallback" bindtouchstart="touchstartCallback" bindtouchend="touchendll" mode='aspectFill' bindload = "imgload" style="position: absolute; width:{{ touch.scaleWidth}}rpx; height:{{touch.scaleHeight}}rpx; left:{{touch.left}}rpx; top:{{touch.top}}rpx " ></image>
   <view class="line-top"></view>
     <view class="line-left"></view>
     <view class="line-bottom"></view>
@@ -21,7 +21,7 @@
       保存
     </button>
   </view>
-</view>
-<view class="cut-page">
-  <canvas  canvas-id="canvas-cut" class="canvas-cut"></canvas>
+  <view class="cut-page">
+    <canvas  canvas-id="canvas-cut" class="canvas-cut" disable-scroll="true"></canvas>
+  </view>
 </view>

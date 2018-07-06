@@ -1,21 +1,28 @@
 //index.js
 //获取应用实例
 const app = getApp();
-
+var canOnePointMove = false;
+var startxMove;
+var startyMove;
+var startDistance;
+var startAngle;
+var finishxMove = 0;
+var finishyMove = 0;
+var translateFx;
+var translateFy;
+var finishAngle;
+var finishScale=1;
+var count = 0;
 Page({
   data: {
     pageimg: "/images/pic3.jpg",
     animationData: {},
     touch: {
-      distance: 0,
-      scale: 1,
       scaleWidth: 0,
       scaleHeight: 0,
       left: 0,
       top: 0,
-      angle: 0
     },
-    
   },
   //事件处理函数
   bindViewTap: function() {
@@ -26,60 +33,87 @@ Page({
   onLoad: function () {
 
   },
-  touchstartCallback: function (e) {
-    // 单手指缩放开始，也不做任何处理
-    if (e.touches.length == 1) return
-    console.log('双手指触发开始')
-    // 注意touchstartCallback 真正代码的开始
-    // 一开始我并没有这个回调函数，会出现缩小的时候有瞬间被放大过程的bug
-    // 当两根手指放上去的时候，就将distance 初始化。
-    let xMove = e.touches[1].clientX - e.touches[0].clientX;
-    let yMove = e.touches[1].clientY - e.touches[0].clientY;
-    let distance = Math.sqrt(xMove * xMove + yMove * yMove);
-    console.log(distance)
-    let angle = Math.atan(yMove / xMove) * 180 / Math.PI
-    console.log(angle)
-    this.setData({
-      'touch.distance': distance,
-      'touch.angle': angle
-    })
-  },
-
-touchmoveCallback: function (e) {
-  let that = this
-  let touch = that.data.touch
-  // 单手指缩放我们不做任何操作
-  if (e.touches.length == 1) return
-  console.log('双手指运动')
-  try{
-      let xMove = e.touches[1].clientX - e.touches[0].clientX;
-      let yMove = e.touches[1].clientY - e.touches[0].clientY;
+touchstartCallback: function (e) {
+  let xMove;
+  let yMove;
+if (e.touches.length == 1) {
+  console.log("lllstart")
+  xMove = e.touches[0].clientX;
+  yMove = e.touches[0].clientY;
+  console.log('startxMove',xMove)
+  console.log('startyMove',yMove)
+  console.log("lllfinsh")
+  startxMove = xMove;
+  startyMove = yMove;
+  canOnePointMove =  true;   
+} else  {
+      xMove = e.touches[1].clientX - e.touches[0].clientX;
+      yMove = e.touches[1].clientY - e.touches[0].clientY;
       let distance = Math.sqrt(xMove * xMove + yMove * yMove);
-      console.log(distance)
+      console.log("startdistance",distance)
       let angle = Math.atan(yMove / xMove) * 180 / Math.PI
-      angle=Math.abs(touch.angle-angle)
-      console.log(angle)
-
-      let newScale = distance/touch.distance*touch.scale
-      this.setData({
-        'touch.distance': distance,
-        'touch.angle': angle
-      }) 
+      console.log('startAngle',angle)
+      startDistance = distance;
+      startAngle = angle;
+  }
+},
+touchmoveCallback: function (e) {
+  let that = this;
+  let touch = that.data.touch;
+  let xMove;
+  let yMove;
+  let translateX;
+  let translateY;
+  if (e.touches.length == 1&&canOnePointMove) {
+    console.log("kkkstart")
+    xMove = e.touches[0].clientX;
+    yMove = e.touches[0].clientY;
+    translateX = xMove - startxMove;
+    translateY = yMove - startyMove;
+    if (count>0){
+      translateX = translateX + finishxMove;
+      translateY =  translateY + finishyMove;
+    }
+    console.log('transx',translateX)
+    console.log('transy',translateY)
+    translateFx = translateX;
+    translateFy = translateY;
+    console.log("kkkfinish")
+    that.animation.translate(translateX,translateY).step();
+  } else {
+    try{
+      xMove = e.touches[1].clientX - e.touches[0].clientX;
+      yMove = e.touches[1].clientY - e.touches[0].clientY;
+      let distance = Math.sqrt(xMove * xMove + yMove * yMove);
+      console.log('finishDistance',distance)
+      let newScale = distance/startDistance*finishScale
+      finishScale = newScale;
+      let angle = Math.atan(yMove / xMove) * 180 / Math.PI;
+      angle=Math.abs(touch.angle-angle);
+      finishAngle = angle;
       if (newScale*touch.scaleWidth>=4320||newScale*touch.scaleHeight>=4320) {
         return;
-      } else if (newScale*touch.scaleWidth<=750||newScale*touch.scaleHeight<=750) {
+      } else if (newScale*touch.scaleWidth<=375||newScale*touch.scaleHeight<=375) {
         return;
       }
-      console.log(newScale)
-      console.log(angle)
-      that.animation.rotate(angle).scale(newScale).step()
-      that.setData({
-        'touch.scale': newScale,
-        animationData: that.animation.export()
-      })
-  } catch(e){
-    console.log(e)
+      console.log('Scale',newScale)
+      console.log('finishAngle',angle)
+      that.animation.scale(finishScale).step()
+    } catch(e){
+      console.log(e)
+    }
   }
+
+  that.setData({
+    animationData: that.animation.export()
+  })
+},
+touchendll: function(e){
+  let that = this
+  count++;
+  canOnePointMove = false;
+  finishxMove = translateFx;
+  finishyMove = translateFy;
 },
 choosePic: function (e) {
   let that = this

@@ -8,7 +8,7 @@
         <view class="font-head-text-page">300dpi电子稿</view>
       </view>
     </view>
-    <view class="upload-page main-page">
+    <view class="upload-page ">
       <view class="upload-head-page">
         设计类型
         <view class="upload-head-choice-page">
@@ -16,13 +16,70 @@
           <view class="{{choiceHalf}}" bindtap="choiceImgHf">半身</view>
           <view class="{{choiceFull}}" bindtap="choiceImgFl">全身</view>
         </view>
-     </view>
-     <view class="upload-center-page">
-      人数
-      <view class="">
-        
       </view>
-     </view>
+      <view class="upload-center-page">
+        人数
+        <view class="upload-center-number-page">
+          <image class="upload-center-left-page" mode="widthFix" src="/images/minus.png" bindtap="choiceMinus"></image>
+          <view class="upload-center-center-page">
+            <input placeholder="2" focus="{{focus}}" bindchange="countNum" value="{{population}}" type="number"/>
+          </view>
+          <image class="upload-center-right-page" mode="widthFix" src="/images/count.png" bindtap="choiceCount"></image>
+        </view>
+      </view>
+      <view class="upload-footer-page">
+        <view class="upload-footer-left">
+          上传照片
+        </view>
+        <view class="upload-footer-right">
+          请上传符合人数要求的照片
+        </view>
+        <view class="upload-footer-img-page">
+          <image class="upload-footer-img-left" bindtap="choiceImgLeft" src="{{choiceLeftImg}}"></image>
+          <image class="upload-footer-img-right" bindtap="choiceImgRight" src="{{choiceRightImg}}"></image>
+        </view>
+      </view>
+    </view>
+    <view class="say-page main-page">
+      叮嘱画师
+      <view class="say-head-page">
+          <view class="{{choiceSayHeadLeft}}" bindtap="choiceSayHeadLeft">画瘦一点</view>
+          <view class="{{choiceSayHeadRight}}" bindtap="choiceSayHeadRight">去掉激萌表情</view>
+      </view>
+      <view class="say-center-page">
+          <view class="{{CheckFirst}}" bindtap="checkSayFirst">画可爱点</view>
+          <view class="{{CheckSecond}}" bindtap="checkSaySecond">去掉首饰</view>
+          <view class="{{CheckThird}}" bindtap="checkSayThird">画帅一点</view>
+          <view class="{{CheckFourth}}" bindtap="checkSayFourth">去掉痣/斑</view>
+      </view>
+      <view class="say-footer-page">
+          <view class="{{choiceFirstBoolean}}" bindtap="choiceSayFirstBoolean">画的更像我</view>
+          <view class="{{choiceSecondBoolean}}" bindtap="choiceSaySecondBoolean">我要美美哒</view>
+          <view class="{{choiceThirdBoolean}}" bindtap="choiceSayThirdBoolean">眼睛画大</view>
+          <view class="{{choiceFourthBoolean}}" bindtap="choiceSayFourthBoolean">眼睛画小</view>
+      </view>
+      <view class="say-footer">
+        通知号码：
+        <input class="say-footer-explain" placeholder="绘画的结果将以短信的形式通知您" bindchange="numPhone" type="number" maxlength="11"/>
+      </view>
+    </view>
+    <view class="count-page main-page">
+      <view class="count-head-page">
+        保持手持道具: {{moneyChina}}{{keepNumMoney}}
+        <switch class="count-head-switch" checked="true" bindchange="switch1Change"/>
+      </view>
+      <view class="count-footer-page">
+        账户余额抵扣:<text style="font-weight: bold;">{{numAccountMoney}}元</text>
+        <switch class="count-footer-switch" checked="true" bindchange="switch2Change"/>
+      </view>
+    </view>
+  </view>
+  <view  class="footer-page">
+    <view class="final-money-page">
+      {{moneyChina}}{{finalCountMoney}}
+    </view>
+    <view class="count-final-page" bindtap="finalCountMoney">
+      去结算
     </view>
   </view>
 </view>
