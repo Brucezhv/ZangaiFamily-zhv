@@ -1,0 +1,74 @@
+@font-face {
+  font-family: 'iconfont';  /* project id 768508 */
+  src: url('//at.alicdn.com/t/font_768508_yrijg0hx6wf.eot');
+  src: url('//at.alicdn.com/t/font_768508_yrijg0hx6wf.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_768508_yrijg0hx6wf.woff') format('woff'),
+  url('//at.alicdn.com/t/font_768508_yrijg0hx6wf.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_768508_yrijg0hx6wf.svg#iconfont') format('svg');
+}
+.bg-page {
+  background-color: #F3F4F7;
+}
+.head-page {
+  margin-top: 30px;
+  padding: 0 40rpx;
+  padding-top: 10rpx;
+  width: 670rpx;
+}
+.options-tit-page {
+  font-weight: bold;
+  font-size: 24px;
+}
+.options-describe-page  {
+  margin-top: 4px;
+  font-size: 16px;
+}
+.options-class-page {
+  display: inline-block;
+  color: #3577F2;
+}
+.options-center-page {
+
+}
+.options-choice-page{
+  display: inline-flex;
+  background-color: #fff;
+  margin-top: 15px;
+  padding: 0 40rpx;
+  width: 670rpx;
+  position: relative;
+}
+.share-page {
+  display: inline-flex;
+  position: fixed;
+  right: 40rpx;
+  font-family: "iconfont";
+  color: white;
+  background-color: blue;
+  width: 45px;
+  font-size: 25px;
+  line-height: 1;
+  height: 45px;
+  top: 30px;
+  border-radius: 50%;
+  padding: 20rpx 20rpx;
+
+}
+.option-page {
+
+}
+.option-num-page{
+  position: absolute;
+  right: 140rpx;
+}
+.footer-page {
+  margin-top: 10px;
+  padding: 0 40rpx;
+  padding-top: 10rpx;
+  width: 670rpx;
+  color: #B8BECA;
+  font-size: 16px;
+}
+.share-page::before {
+  content: "\abc";
+}

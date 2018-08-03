@@ -1,0 +1,25 @@
+/**index.wxss**/
+.choice-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 280px;
+  width: 100%;
+}
+.choice-img-page{
+  width: 260rpx;
+}
+.choice-start-page {
+  color: white;
+  background-color: blue;
+  font-size: 16px;
+  padding: 0 110rpx;
+  line-height: 2.1;
+}
+.center-page {
+  background-color: #e0e0e0;
+  height: 6px;
+  width: 100%;
+}
+

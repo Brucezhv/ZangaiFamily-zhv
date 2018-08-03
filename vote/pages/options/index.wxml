@@ -1,0 +1,31 @@
+<view class="container bg-page">
+    <view class="head-page">
+        <view class="options-tit-page">{{title}}</view>
+        <button class="share-page" open-type="share" bindtap="shareVote">
+        </button>
+        <view class="options-describe-page">
+            {{description}}
+            <view class="options-class-page" wx:if="{{choice=='1'}}">
+                [单选]
+            </view>
+            <view class="options-class-page" wx:if="{{choice=='2'}}">
+                [多选]
+            </view>
+        </view>
+    </view>
+    <view class="options-center-page" wx:for="{{options}}" >
+        <view class="options-choice-page" bindtap="showVote">
+            <view class="option-page">
+                {{item.description}}
+            </view>
+            <view class="option-num-page" >
+                {{item.wechat_users.length}}票
+            </view>
+        </view>
+        <view class="use-detail-page" wx:for="{{}}">
+        </view>
+    </view>
+    <view class="footer-page">
+        投票截止: {{endAt}}
+    </view>
+</view>

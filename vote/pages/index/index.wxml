@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="choice-page" catchtap="ChoiceStart" data-choice="1">
+    <image class="/pages/images/choice-img-page" src="/pages/images/2.png" mode="widthFix"></image>
+    <button class="choice-start-page" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 单选投票 </button>
+    <button  class="choice-start-page" wx:else>
+      单选投票 
+    </button>
+  </view>
+  <view class="center-page"></view>
+  <view class="choice-page" catchtap="ChoiceStart" data-choice="2">
+    <image class="choice-img-page" src="/pages/images/1.png" mode="widthFix"></image>
+    <button class="choice-start-page" wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 多选投票 </button>
+    <button  class="choice-start-page" wx:else>
+      多选投票 
+    </button>
+  </view>
+  
+</view>

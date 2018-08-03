@@ -1,0 +1,95 @@
+.out-page {
+    background-color: #F3F4F7;
+}
+
+.choice-options-page {
+    padding: 0 40rpx;
+    padding-top: 10rpx;
+    width: 670rpx;
+    background-color: #fff;
+}
+.choice-padding-page {
+    padding: 10px 0;
+}
+.input-tit-page {
+    width: 100%;
+    font-size: 22px;
+    font-weight: bold;
+
+    border-bottom: 2px solid #f4f6f9;
+}
+
+.input-describe-page {
+    width: 100%;
+    font-size: 19px;
+    border-bottom: 2px solid #f4f6f9;
+}
+
+.phcolor{
+    color: #DBDEE4;
+}
+
+.phcolor-tit {
+    color: #dbdee4;
+}
+
+.options-page {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+}
+
+.reduce-icon {
+    width: 40rpx;
+}
+
+.options-choice-page {
+    width: 100%;
+    padding-left: 5px;
+    font-size: 16px;
+    border-bottom: 2px solid #f4f6f9;
+}
+
+.increase-page {
+    display: inline-flex;
+    width: 100%;
+    align-items: center;
+    color: #256df2;
+}
+
+.increase-icon {
+    width: 40rpx;
+}
+
+.picker-page {
+    display: inline-block;
+    margin-top: 60rpx;
+    position: relative;
+    border-bottom: 2px solid #f4f6f9;
+}
+
+.picker {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
+.data-page {
+    display: inline-block;
+}
+
+.time-page {
+    margin-left: 30rpx;
+    display: inline-block;
+}
+
+.footer-page {
+    display: flex;
+    justify-content: center;
+    background-color: #256df2;
+    margin: 0 40rpx;
+    margin-top: 40rpx;
+    padding: 10rpx 0;
+    border-radius: 5px;
+    width: 670rpx;
+}

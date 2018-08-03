@@ -1,0 +1,24 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/myCenter/index",
+    "pages/choice/index",
+    "pages/options/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "投票",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{ 
+    "list":[{
+      "pagePath": "pages/index/index",
+      "text": "新建"
+    },{
+      "pagePath": "pages/myCenter/index",
+      "text": "我的"
+    }]
+  }
+}

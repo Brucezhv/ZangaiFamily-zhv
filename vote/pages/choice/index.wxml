@@ -1,0 +1,32 @@
+<view class="container out-page">
+    <view class="choice-options-page">
+        <input class="input-tit-page choice-padding-page" bindinput="titInput" placeholder-class="phcolor-tit" placeholder="投票标题" />
+        <input class="input-describe-page choice-padding-page" bindinput="describeInput" placeholder-class="phcolor" placeholder="补充描述(选填)" />
+        <view class="options-page" wx:for="{{lists}}">
+            <image class="reduce-icon" src="/pages/images/reduceicon.png" data-index="{{index}}" bindtap="reduce" mode="widthFix"></image>
+            <input class="options-choice-page choice-padding-page" data-index="{{index}}" bindinput="optionsInput"  value="{{item.description}}" placeholder-class="phcolor" placeholder="选项"/>
+        </view>
+        <view class="increase-page choice-padding-page">
+            <image class="increase-icon" src="/pages/images/increaseicon.png" bindtap="increase" mode="widthFix"></image>
+            <text style="margin-left: 5px; font-size: 16px;">添加选项</text> 
+        </view>
+    </view>
+    <view class="picker-page choice-options-page">
+        截止日期
+        <view class="picker">
+        <picker class="data-page" mode="date" value="{{timeDataPicker}}"  bindchange="bindDateChange">
+            <view >
+                {{timeDataPicker}}
+            </view>
+        </picker>
+        <picker class="time-page" mode="time" value="{{timeM}}" bindchange="bindTimeChange">
+            <view >
+                {{timeM}}
+            </view>
+        </picker>
+        </view>
+    </view>
+    <view class="footer-page" bindtap="optionsRequest">
+        完成
+    </view>
+</view>
