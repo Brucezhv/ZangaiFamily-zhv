@@ -11,9 +11,9 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.0.9",
+	"libVersion": "2.1.1",
 	"appid": "wxe528e9cd28e8d232",
-	"projectname": "demo",
+	"projectname": "wopainihua",
 	"isGameTourist": false,
 	"condition": {
 		"search": {
