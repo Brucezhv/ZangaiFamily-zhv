@@ -42,7 +42,7 @@ Page({
     console.log(timeD)
     let timeM = timeMS.slice(0,2)+timeMS.slice(3,5).toString();
     app.globalData.timeD=timeD;
-    timeM = " 0600"
+    timeM = " 0800"
     this.setData({
       timeM: timeM,
     })
