@@ -47,6 +47,7 @@ if (e.touches.length == 1) {
   startyMove = yMove;
   canOnePointMove =  true;   
 } else  {
+      console.log(e.touches)
       xMove = e.touches[1].clientX - e.touches[0].clientX;
       yMove = e.touches[1].clientY - e.touches[0].clientY;
       let distance = Math.sqrt(xMove * xMove + yMove * yMove);
