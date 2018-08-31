@@ -1,0 +1,114 @@
+/**index.wxss**/
+.first-page{
+  background-color: #010729;
+  height: 100vh;
+}
+.head-page {
+  margin-top: 105rpx;
+  letter-spacing: 30rpx;
+  text-indent: 30rpx;
+  text-shadow: 0 2px #4EC3F1, 2px 0 #4EC3F1, -2px 0 #4EC3F1, 0 -2px #4EC3F1;
+  text-align: center;
+  font-size: 105rpx;
+  line-height: 105rpx;
+  color: #010729;
+}
+.button-page {
+  padding: 24rpx 255rpx;
+  line-height: 32rpx;
+  font-size: 16px;
+  background-color: #3BAAED;
+  color: #FCFDFD;
+}
+.name-num-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 115rpx;
+}
+.num-page {
+  text-align: center;
+  line-height: 36rpx;
+  font-size: 36rpx;
+  color: #DB4C9B;
+}
+.name-page {
+  background-color: #0E1647;  
+  margin-top: 36rpx;
+  padding: 28rpx 70rpx;
+}
+.input-placeholder-page {
+  text-align: center;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  color: #6873B5;
+  width: 330rpx;
+}
+.department-page {
+  margin-top: 78rpx;
+}
+.department-head-page {
+  text-align: center;
+  line-height: 42rpx;
+  font-size: 42rpx;
+  color: #F9C432;
+}
+.department-choice-page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 10rpx;
+  padding: 0 40rpx;
+}
+.department-name-page {
+  display: inline-block;
+  text-align: center;
+  margin-top: 50rpx;
+  width: 198rpx;
+  /* border: 1px solid #FFFFFF; */
+  /* color: #fff; */
+}
+.department-uncheck-page {
+  border: 1px solid #FFFFFF;
+  color: #fff;
+  border-radius: 8rpx;
+  padding: 13rpx 0;
+}
+.department-check-page {
+  box-shadow: inset 0px 0px 10px #F9C332;
+  border: 1px solid #F9C332;
+  color: #FAC532;
+  border-radius: 8rpx;
+  padding: 13rpx 0;
+}
+.department-disable-page {
+  border: 1px solid #293364;
+  color: #293364;
+  border-radius: 8rpx;
+  padding: 13rpx 0;
+}
+.game-come-page {
+  margin-top: 70rpx;
+}
+.warning-page {
+  margin-top: 60rpx;
+
+}
+.opening-hours-page {
+  font-size: 16px;
+  text-align: center;
+  border: 1px solid #DB413A;
+  padding: 1rpx 0;
+  color: #5DDEF5;
+}
+.warning-important-page {
+  margin-top: 22rpx;
+  text-align: center;
+  font-size: 14px;
+  color: #E0423B;
+}
+.demo {
+  width: 330rpx;
+  height: 30rpx;
+  color: #00ff00;
+}

@@ -1,0 +1,12 @@
+<view class="container all">
+    <canvas style="height: 866rpx;width: 670rpx" canvas-id="checkCanvas" bindlongpress='save'></canvas>
+    <view class="share-page">长按图片保存分享至朋友圈</view>
+    <view class="footer-page">
+        <button class="button-page" catchtap="nav">
+            其他病症
+        </button>
+        <button class="button-page" open-type="share">
+            TA也有"病"
+        </button>
+    </view>
+</view>

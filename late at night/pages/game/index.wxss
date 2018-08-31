@@ -1,0 +1,99 @@
+.all {
+    background-color: #010729;
+    min-height: 100vh;
+}
+.header-page {
+    display: flex;
+    justify-content: center;
+}
+.header-data-page {
+    padding-top: 15rpx;
+    line-height: 20rpx;
+    font-size: 20rpx;
+    padding: 10rpx 84rpx;
+    background-color: #0D153C;
+    color: #3B4C9A;
+    border-radius: 30rpx;
+}
+.start-page {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40rpx;
+}
+.client-page {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-bottom: 40rpx;
+}
+.image-page {
+    width: 84rpx;
+    border-radius: 50%;
+}
+.image-left-page {
+    margin-left: 40rpx;
+}
+.image-right-page {
+    margin-right: 40rpx;
+}
+.say-page {
+    display: inline-flex;
+    padding: 22rpx 32rpx;
+    border-radius: 70rpx;
+    line-height: 28rpx;
+    font-size: 28rpx;
+}
+.say-left-page {
+    background-color: #0E1647;
+    margin-left: 12rpx;
+    color: #EFF0F5;
+}
+.say-right-page {
+    background-color: #F9C432;
+    color: #2E2505;
+    margin-right: 12rpx;
+}
+.say-reslove-page {
+    background-color: #0E1647;
+    margin-left: 12rpx;
+    color: #57D0E3;
+}
+.demo {
+    padding-bottom: 8rpx;
+    border-bottom: 1rpx solid #5EDFF1;
+}
+.icon-page {
+    padding: 12rpx 38rpx;
+}
+.footer-page {
+    position: fixed;
+    bottom: 0;
+    background: #0E1549;
+}
+.footer-content-page {
+    width: 598rpx;
+    padding: 20rpx 36rpx;
+    margin: 15rpx 40rpx;
+    font-size: 30rpx;
+    line-height: 30rpx;
+    background-color: #18225F;
+    color: #414D9F;
+    border-radius: 50rpx;
+}
+.footer-choice-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 62rpx 0;
+    width: 750rpx;
+}
+.footer-choice-font-page {
+    line-height: 33rpx;
+    font-size: 33rpx;
+    margin: 46rpx 0;
+    color: #FFFEFB;
+}
+.lll {
+    min-height: 100rpx;
+}

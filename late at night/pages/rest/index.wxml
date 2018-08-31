@@ -1,0 +1,3 @@
+<view class="rest-page">
+    <image mode="widthFix" style="width: {{width}}rpx;margin-top: {{top}}rpx" bindload = "imgload" src="../images/time.png"></image>
+</view>

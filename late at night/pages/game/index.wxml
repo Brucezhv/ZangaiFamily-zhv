@@ -1,0 +1,46 @@
+<view class="all clearfix">
+    <view class="header-page">
+        <view class="header-data-page">
+            已为您接通冯医生
+        </view>
+    </view>
+    <view >
+        <view class="start-page" wx:for="{{show}}">
+            <image class="image-left-page image-page" mode="widthFix" src="../images/visit_headPortrait.png"></image>
+            <view class="say-left-page say-page">{{item.content}}</view>
+        </view>
+        <view class="start-page">
+            <image class="image-left-page image-page" mode="widthFix" src="../images/visit_headPortrait.png"></image>
+            <view class="say-left-page say-page icon-page">
+                <image mode="widthFix" style="width: 48rpx" src="../images/timg.png"></image>
+            </view>
+        </view>
+        <view  wx:for="{{choiceContent}}">
+            <view class="client-page">
+                <image class="image-right-page image-page" mode="widthFix" src="{{userInfo.avatarUrl}}"></image>
+                <view class="say-right-page say-page">{{item.content}}</view>
+            </view>
+            <view class="start-page">
+                <image class="image-left-page image-page" mode="widthFix" src="../images/visit_headPortrait.png"></image>
+                <view class="say-reslove-page say-page" catchtap="checkResult" data-check="{{index}}">
+                    <view class="demo">
+                        点我查看诊断结果
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="lll">
+        
+    </view>
+     <view class="footer-page">
+        <view wx:if="{{bol!=false}}" class="footer-content-page"  catchtap="gameChoice">
+            输入病症...
+        </view>
+        <view wx:else class="footer-choice-page" catchtap="choiceOn">
+            <view class="footer-choice-font-page" wx:for="{{choice.choiceId}}" bindtap="choiceClick" data-choice="{{index}}">
+                {{item.content}}
+            </view>
+        </view>
+    </view>
+</view>

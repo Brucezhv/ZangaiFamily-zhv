@@ -1,0 +1,28 @@
+.all {
+    background-color: #010729;
+    min-height: 100vh;
+    justify-content: center;
+}
+.share-page {
+    margin-top: 38rpx;
+    color: #D84B98;
+    line-height: 32rpx;
+    font-size: 32rpx;
+}
+.footer-page {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 44rpx;
+    width: 100%;
+}
+.button-page {
+    background-color: #3BAAED;
+    color: #FFFEF6;
+    line-height: 44rpx;
+    font-size: 44rpx;
+    /* padding: 24rpx 102rpx; */
+    margin: 0 0;
+    padding: 24rpx 0;
+    width: 320rpx;
+
+}

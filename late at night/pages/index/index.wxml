@@ -1,0 +1,47 @@
+<!--index.wxml-->
+<view class="container first-page">
+  <view class="head-page">
+    深夜大药房
+  </view>
+  <view class="name-num-page">
+    <view class="num-page">
+      您是第25678名患者
+    </view>
+    <view class="name-page" wx:if="{{!x}}">
+      <input type="text" class="demo" bindinput="bindKeyInput" placeholder="请输入就诊患者姓名(昵称)" placeholder-class="input-placeholder-page" />
+    </view>
+    <image wx:if="{{x}}" mode="widthFix" style="width: 375rpx;" src="/pages/images/nonametips.png" catchtap="toast"></image>
+
+  </view>
+  <view class="department-page">
+    <view class="department-head-page">
+      请选择科室
+    </view>
+    <view class="department-choice-page">
+      <view class="department-name-page" wx:for="{{department}}" >
+        <view class="department-uncheck-page" wx:if="{{index!=choiceDepartment&&index!=5}}" data-choice="{{index}}" bindtap="gameStart">
+          {{item.content}}
+        </view>
+        <view class="department-disable-page" wx:elif="{{index==5}}">
+          {{item.content}}
+        </view>
+        <view class="department-check-page" wx:else>
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="game-come-page" catchtap="gameCome">
+    <button class="button-page" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 
+      进入诊疗室
+    </button>
+  </view>
+  <view class="warning-page">
+    <view class="opening-hours-page">
+      营业时间 6:00p.m~7:00a.m
+    </view>
+    <view class="warning-important-page">
+      谨遵医嘱一旦复发概不负责
+    </view>
+  </view>
+</view>
