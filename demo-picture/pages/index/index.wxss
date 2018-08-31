@@ -1,0 +1,49 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.picture-dispose-page {
+  display: inline-flex;
+  position: relative;
+  height: 750rpx; 
+  flex-direction: column;
+  width: 750rpx;
+  overflow: hidden;
+}
+.footer-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 350rpx;
+}
+.footer-button {
+  display: inline-flex;
+  padding: 1px 40px;
+  font-size: 30rpx;
+  border: 1px solid #000; 
+  border-radius: 20rpx; 
+}
+.footer-left-button {
+  background-color: #ff6060;
+}
+.footer-right-button {
+  background-color: #008080;
+}

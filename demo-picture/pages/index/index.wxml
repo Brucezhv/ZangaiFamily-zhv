@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="picture-dispose-page">
+        <image animation="{{animationImg}}" src="{{imgDispose}}" bindload = "imgload" bind:touchstart="disposeStart" bind:touchmove="disposeMove" style="  position: absolute; width: {{pageImg.width}}rpx; height: {{pageImg.height}}rpx; top: {{pageImg.top}}rpx; left: {{pageImg.left}}rpx;"></image>
+    </view>
+    <view class="footer-page">
+    <button class="footer-button footer-left-button" bindtap="choosePic">
+      上传
+    </button>
+    <button class="footer-button footer-right-button" bindtap="savaPic">
+      保存
+    </button>
+  </view>
+</view>
