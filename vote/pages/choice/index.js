@@ -65,8 +65,11 @@ Page({
   },
   optionsInput: function(e){
     console.log(e)
+      
     var arr = this.data.lists
     var obj = arr[e.currentTarget.dataset.index]
+    let a=/ [a - zA - z] +: \/\/\s*/ ;
+    console.log(a.test(obj)+'regexp')
     obj.description = e.detail.value
     this.setData({
       lists:arr

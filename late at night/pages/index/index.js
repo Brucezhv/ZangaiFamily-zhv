@@ -34,15 +34,14 @@ Page({
     })
   },
   onLoad: function () {
-
     let time = util.formatTime(new Date()); 
     let timeT=time.split(" ");
     let timeMS = timeT[1];
     let timeD=timeT[0].split("/");
     console.log(timeD)
     let timeM = timeMS.slice(0,2)+timeMS.slice(3,5).toString();
+    timeM="0600"
     app.globalData.timeD=timeD;
-    timeM = " 0800"
     this.setData({
       timeM: timeM,
     })
@@ -66,7 +65,9 @@ Page({
     })
   },
   getUserInfo: function(e) {
-    console.log(e)
+    console.log(e);
+    let demo = typeof(e);
+    console.log(demo+"isArray")
     app.globalData.time=""
     app.globalData.userInfo = e.detail.userInfo;
     this.setData({
